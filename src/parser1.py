@@ -230,13 +230,48 @@ class DealInfoHandler:
 
     def parse_l1_deal_data(self, html):
         selector = etree.HTML(html.encode('utf-8'))
-        l_next_level_urls = selector.xpath(r"//div[@class='leftContent']//ul[@class='listContent']//li/a/@href")
-        l_next_pages = selector.xpath(r"//div[@class='page-box house-lst-page-box']//a")
-        next_page_url = ''
-        return temp, l_next_level_urls
+        l_next_level_urls = [str(x) for x in selector.xpath(r"//div[@class='leftContent']//ul[@class='listContent']//li/a/@href")]
+        l_next_page = selector.xpath(r"//div[@class='page-box house-lst-page-box']//a[text()='下一页']/@href")
+        if l_next_page:
+            next_page = str(l_next_page[0])
+        else:
+            next_page = None
+        return next_page, l_next_level_urls
 
     def parse_l2_deal_data(self, url):
-        pass
+        selector = etree.HTML(html.encode('utf-8'))
+        code = selector.xpath(r"//div[class='overview']//div[class='price']//i")
+        total_price
+        unit_price
+        room
+
+        floor
+        build_area
+        huxing
+        house_area
+        orientations
+
+        buiding_texture
+        decoration
+        elevator_house_proportion
+        heating
+        is_elevator
+
+        property_right
+        building_type
+        xiaoqu
+        region
+        guapai_time
+
+        property_type
+        last_deal_time
+        house_usage
+        deal_year
+        property_ownership
+
+        mortgage
+        is_expire
+
 
 
 if __name__ == '__main__':
