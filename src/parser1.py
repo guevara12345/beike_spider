@@ -5,52 +5,48 @@ import os
 from datetime import date
 import time
 from lxml import etree
+from urllib.parse import urljoin
 
 
-tb_house_info = ['code', 'total_price', 'unit_price', 'room',
-                 'floor', 'build_area', 'huxing', 'house_area', 'orientations',
-                 'buiding_texture', 'decoration', 'elevator_house_proportion', 'heating', 'is_elevator',
-                 'property_right', 'building_type', 'xiaoqu', 'region', 'guapai_time',
-                 'property_type', 'last_deal_time', 'house_usage', 'deal_year', 'property_ownership',
-                 'mortgage', 'is_expire']
+from db_orm import DealInfo, RegionInfo, SaleInfo, DBSession
+import config
+
+
 proj_path = os.path.abspath('..')
 
 
 class RegionInfoHandler:
-    chaoyang_far_region = ['北工大', '百子湾', '成寿寺', '常营', '朝阳门外',
-                           'CBD', '朝青', '朝阳公园', '东坝', '大望路',
-                           '东大桥', '大山子', '豆各庄', '定福庄', '方庄',
-                           '垡头', '广渠门', '高碑店', '国展', '甘露园',
-                           '管庄', '欢乐谷', '红庙', '华威桥', '酒仙桥',
-                           '劲松', '建国门外', '农展馆', '潘家园', '石佛营',
-                           '十里堡', '首都机场', '双井', '十里河', '十八里店',
-                           '双桥', '三里屯', '四惠', '通州北苑', '团结湖',
-                           '太阳宫', '甜水园', '望京', '西坝河', '燕莎', '中央别墅区', '朝阳其它']
-
-    def parse_region(self, html, path):
-        district = re.split(r'/', path)[6]
-        soup = BeautifulSoup(html, 'html.parser')
-        r = []
-        l = soup.find('div', 'sub_sub_nav section_sub_sub_nav').find_all('a')
-        for i in l:
-            if i.string in RegionInfoHandler.chaoyang_far_region:
-                is_far = 1
+    def parse_l1_data(self, html, url):
+        selector = etree.HTML(html.encode('utf-8'))
+        l_region = \
+            [str(x).strip() for x in selector.xpath("//div[@data-role='ershoufang']/div[2]/a/text()")]
+        list_r = []
+        for i in l_region:
+            r = RegionInfo()
+            r.district = selector.xpath(
+                "//div[@data-role='ershoufang']/div[1]/a[@class='selected'][1]/text()")[0]
+            r.region = i
+            if i in config.chaoyang_far_region:
+                r.is_too_far = 1
             else:
-                is_far = 0
-            r.append((i.string, district, is_far))
-        print('parse {} for region info'.format(path, r))
-        return r
+                r.is_too_far = 0
+            list_r.append(r)
+        print('parse {}, return {} items of data'.format(url, len(list_r)))
+        return None, list_r
 
-    def persist_region(self, paras):
-        db = db_helper.DbExeu()
-        exists_sql = '''select * from tb_region_info where region=%s'''
-        insert_sql = '''insert into tb_region_info(region,district,is_too_far) 
-                             values (%s,%s,%s)'''
-        for i in paras:
-            if db.return_many_with_para(exists_sql, i[0])[1] == 0:
-                db.trans(insert_sql, [i, ])
-        print('persist {} region info done'.format(paras[0][1]))
-
+    def persist(self, list_r):
+        try:
+            session = DBSession()
+            for i in list_r:
+                session.merge(i)
+            session.commit()
+            print('persist {} items of data'.format(len(list_r)))
+        except Exception as e:
+            session.roolback()
+            print(e)
+        finally:
+            session.close()
+        return False
 
 class SaleInfoHandler:
     # parse https://bj.lianjia.com/ershoufang/haidian/ for max_page_num
@@ -228,50 +224,146 @@ class SaleInfoHandler:
 
 class DealInfoHandler:
 
-    def parse_l1_deal_data(self, html):
+    def parse_l1_data_2_urls(self, html, url):
         selector = etree.HTML(html.encode('utf-8'))
-        l_next_level_urls = [str(x) for x in selector.xpath(r"//div[@class='leftContent']//ul[@class='listContent']//li/a/@href")]
-        l_next_page = selector.xpath(r"//div[@class='page-box house-lst-page-box']//a[text()='下一页']/@href")
-        if l_next_page:
-            next_page = str(l_next_page[0])
-        else:
-            next_page = None
+        l_add_url = selector.xpath(r"//div[@data-role='ershoufang']/div[2]/a/@href")
+        l_url = [url.join(r'https://bj.ke.com/chengjiao/', str(x).strip()) for x in l_add_url]
+        print('parse l1 deal data of {} done, return {} urls'.format(url, len(l_url)))
+        return l_url
+
+    def parse_l2_data_2_urls(self, html, url):
+        selector = etree.HTML(html.encode('utf-8'))
+        l_next_level_urls = \
+            [str(x) for x in selector.xpath(r"//div[@class='leftContent']//ul[@class='listContent']//li/a/@href")]
+        #next_page
+        next_page = None
+        page_data = selector.xpath(r"//div[@class='page-box house-lst-page-box'][1]/@page-data")[0]
+        mobj = re.match(r'{"totalPage":(\d+),"curPage":(\d+)}', page_data)
+        curPage = int(mobj[2])
+        totalPage = int(mobj[1])
+        page_url = selector.xpath(r"//div[@class='page-box house-lst-page-box'][1]/@page-url")[0]
+        if curPage+1 <= totalPage:
+            next_page = urljoin('https://bj.ke.com/', str(page_url).format(page = curPage+1))
+        print('parse l2 deal data of {} done, next_page is {}'.format(url, next_page))
         return next_page, l_next_level_urls
 
-    def parse_l2_deal_data(self, url):
+    def parse_l3_data_2_persist(self, html, url):
+        r = DealInfo()
         selector = etree.HTML(html.encode('utf-8'))
-        code = selector.xpath(r"//div[class='overview']//div[class='price']//i")
-        total_price
-        unit_price
-        room
+        if selector.xpath(r"//div[@class='overview']//div[@class='price']//i[1]"):
+            r.total_price = str(selector.xpath(
+                r"//div[@class='overview']//div[@class='price']//i[1]/text()")[0]).strip()
+        else:
+            r.total_price = 'No Data'
+        if selector.xpath(r"//div[@class='overview']//div[@class='price']//b[1]"):
+            r.unit_price = str(selector.xpath(
+                r"//div[@class='overview']//div[@class='price']//b[1]/text()")[0]).strip()
+        else:
+            r.unit_price = 'No Data'
 
-        floor
-        build_area
-        huxing
-        house_area
-        orientations
+        #房屋户型
+        r.room = str(selector.xpath(
+            r"//div[@class='introContent']//div[@class='base']//li[1]/text()")[0]).strip()
+        #所在楼层
+        r.floor = str(selector.xpath(
+            r"//div[@class='introContent']//div[@class='base']//li[2]/text()")[0]).strip()
+        #建筑面积
+        r.build_area = str(selector.xpath(
+            r"//div[@class='introContent']//div[@class='base']//li[3]/text()")[0]).strip()
+        #户型结构
+        r.huxing = str(selector.xpath(
+            r"//div[@class='introContent']//div[@class='base']//li[4]/text()")[0]).strip()
+        #套内面积
+        r.house_area = str(selector.xpath(
+            r"//div[@class='introContent']//div[@class='base']//li[5]/text()")[0]).strip()
+        #建筑类型
+        r.building_type = str(selector.xpath(
+            r"//div[@class='introContent']//div[@class='base']//li[6]/text()")[0]).strip()
+        #房屋朝向
+        r.orientations = str(selector.xpath(
+            r"//div[@class='introContent']//div[@class='base']//li[7]/text()")[0]).strip()
+        #建成年代
+        r.buiding_time = str(selector.xpath(
+            r"//div[@class='introContent']//div[@class='base']//li[8]/text()")[0]).strip()
+        #装修情况
+        r.decoration = str(selector.xpath(
+            r"//div[@class='introContent']//div[@class='base']//li[9]/text()")[0]).strip()
+        #建筑结构
+        r.buiding_texture = str(selector.xpath(
+            r"//div[@class='introContent']//div[@class='base']//li[10]/text()")[0]).strip()
+        #供暖方式
+        r.heating = str(selector.xpath(
+            r"//div[@class='introContent']//div[@class='base']//li[11]/text()")[0]).strip()
+        #梯户比例
+        r.elevator_house_proportion = str(selector.xpath(
+            r"//div[@class='introContent']//div[@class='base']//li[12]/text()")[0]).strip()
+        #产权年限
+        r.property_time = str(selector.xpath(
+            r"//div[@class='introContent']//div[@class='base']//li[12]/text()")[0]).strip()
+        #配备电梯
+        r.is_elevator = str(selector.xpath(
+            r"//div[@class='introContent']//div[@class='base']//li[14]/text()")[0]).strip()
 
-        buiding_texture
-        decoration
-        elevator_house_proportion
-        heating
-        is_elevator
+        #链家编号
+        r.code = str(selector.xpath(
+            r"//div[@class='introContent']//div[@class='transaction']//li[1]/text()")[0]).strip()
+        # 交易权属
+        r.property_type = str(selector.xpath(
+            r"//div[@class='introContent']//div[@class='transaction']//li[2]/text()")[0]).strip()
+        #挂牌时间
+        r.guapai_time = str(selector.xpath(
+            r"//div[@class='introContent']//div[@class='transaction']//li[3]/text()")[0]).strip()
+        #房屋用途
+        r.house_usage = str(selector.xpath(
+            r"//div[@class='introContent']//div[@class='transaction']//li[4]/text()")[0]).strip()
+        #房屋年限
+        r.deal_year = str(selector.xpath(
+            r"//div[@class='introContent']//div[@class='transaction']//li[5]/text()")[0]).strip()
+        #房权所属
+        r.property_ownership = str(selector.xpath(
+            r"//div[@class='introContent']//div[@class='transaction']//li[6]/text()")[0]).strip()
+        #region
+        str_region = str(selector.xpath(r"//div[@class='deal-bread']//a[last()]/text()")[0]).strip()
+        mobj = re.match(r'(\S+)二手房成交价格', str_region)
+        if mobj:
+            r.region = mobj[1]
+        #district
+        str_district = str(selector.xpath(r"//div[@class='deal-bread']//a[last()-1]/text()")[0]).strip()
+        mobj = re.match(r'(\S+)二手房成交价格', str_district)
+        if mobj:
+            r.district = mobj[1]
+        #xiaoqu
+        str_xiaoqu = str(selector.xpath(r"//div[4]/div[@class='wrapper']/text()")[0]).strip()
+        mobj = re.match(r'(\S+)\s+(\S+)\s+(\S+)', str_xiaoqu)
+        if mobj:
+            r.xiaoqu = mobj[1]
+        #deal_time
+        str_deal_time = str(selector.xpath(r"//div[4]/div[@class='wrapper']/span/text()")[0]).strip()
+        mobj = re.match(r'(\S+)\s+(\S+)', str_deal_time)
+        if mobj:
+            r.deal_time = mobj[1].replace('.','-')
 
-        property_right
-        building_type
-        xiaoqu
-        region
-        guapai_time
+        r.is_expire = 0
+        r.url = url
+        print('parse l3 deal data of {} done'.format(url))
+        return r
 
-        property_type
-        last_deal_time
-        house_usage
-        deal_year
-        property_ownership
+    def persist(self, list_r):
+        try:
+            session = DBSession()
+            is_stop = None
+            #is_stop = session.query(DealInfo).filter(DealInfo.code == list_r[0].code).one_or_none()
+            for i in list_r:
+                session.merge(i)
+            session.commit()
+            print('persist {} items of data, and is_stop = {}'.format(len(list_r), True if is_stop else False))
 
-        mortgage
-        is_expire
-
+        except Exception as e:
+            session.roolback()
+            print(e)
+        finally:
+            session.close()
+        return True if is_stop else False
 
 
 if __name__ == '__main__':
@@ -290,5 +382,11 @@ if __name__ == '__main__':
         RegionInfoHandler().persist_region(r)
         # print(r)
     '''
-    with open(os.path.join(proj_path, u'data/deal1.html'), 'r') as f:
-        DealInfoHandler().parse_l1_deal_data(f.read())
+    #sale info test
+    with open(os.path.join(proj_path, u'data/deal1_2.html'), 'r') as f:
+        DealInfoHandler().parse_l2_data_2_urls(f.read(), 'test')
+    with open(os.path.join(proj_path, u'data/deal_level_2_2.html'), 'r') as f:
+        DealInfoHandler().parse_l3_data_2_persist(f.read(), 'test')
+    #region info test
+    with open(os.path.join(proj_path, u'data/region_1.html'), 'r') as f:
+        RegionInfoHandler().parse_l1_data(f.read(), 'text')

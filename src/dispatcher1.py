@@ -1,55 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-from urllib.parse import urljoin
 from requests.exceptions import Timeout, RequestException
 import os
 import re
+import time
 
 
 import test_tool
 from downloader1 import HtmlDownloader
-from parser1 import HouseInfoHandler, DealInfoHandler, RegionInfoHandler
-
-
-MAX_PRICE = 900
-MIN_PRICE = 650
-BUILD_AGE = {'0-5': 'y1', '0-10': 'y2', '0-15': 'y3', '0-20': 'y4', }
-HOUSE_TYPE = {'1': 'l1', '2': 'l2', '3': 'l3', '4': 'l4'}
-BOUND = '{}{}bp{}ep{}'.format(BUILD_AGE['0-20'], HOUSE_TYPE['2'], MIN_PRICE, MAX_PRICE)
-
-#各区在售二手房爬取开始页面
-l_sale_start_urls = [
-    'https://bj.ke.com/ershoufang/dongcheng/pg{}{}'.format(1, BOUND),
-    'https://bj.ke.com/ershoufang/xicheng/pg{}{}'.format(1, BOUND),
-    'https://bj.ke.com/ershoufang/chaoyang/pg{}{}'.format(1, BOUND),
-    'https://bj.ke.com/ershoufang/haidian/pg{}{}'.format(1, BOUND),
-    'https://bj.ke.com/ershoufang/fengtai/pg{}{}'.format(1, BOUND),
-    'https://bj.ke.com/ershoufang/shijingshan/pg{}{}'.format(1, BOUND),
-    'https://bj.ke.com/ershoufang/tongzhou/pg{}{}'.format(1, BOUND),
-    'https://bj.ke.com/ershoufang/changping/pg{}{}'.format(1, BOUND)
-]
-#各区下属区片名称爬取
-dict_district_start_url = {
-    u'东城': 'https://bj.ke.com/xiaoqu/dongcheng/',
-    u'西城': 'https://bj.ke.com/xiaoqu/xicheng/',
-    u'朝阳': 'https://bj.ke.com/xiaoqu/chaoyang/',
-    u'海淀': 'https://bj.ke.com/xiaoqu/haidian/',
-    u'丰台': 'https://bj.ke.com/xiaoqu/fengtai/',
-    u'石景山': 'https://bj.ke.com/xiaoqu/shijingshan/',
-    u'通州': 'https://bj.ke.com/xiaoqu/tongzhou/',
-    u'昌平': 'https://bj.ke.com/xiaoqu/changping/'
-}
-#各区历史成交二手房爬取
-l_deal_start_urls = [
-    'https://bj.ke.com/chengjiao/dongcheng/',
-    'https://bj.ke.com/chengjiao/xicheng/',
-    'https://bj.ke.com/chengjiao/chaoyang/',
-    'https://bj.ke.com/chengjiao/haidian/',
-    'https://bj.ke.com/chengjiao/fengtai/',
-    'https://bj.ke.com/chengjiao/shijingshan/',
-    'https://bj.ke.com/chengjiao/tongzhou/',
-    'https://bj.ke.com/chengjiao/changping/'
-]
+from parser1 import SaleInfoHandler, DealInfoHandler, RegionInfoHandler
+import config
 
 
 def prepare():
@@ -58,33 +18,68 @@ def prepare():
     if not os.path.isdir(path):
         os.makedirs(path)
 
+def get_3_level_data(starturl, handler):
+    html1 = HtmlDownloader().download_html(starturl)
+    l_l2_data_url = handler.parse_l1_data_2_urls(html1, starturl)
+    for i in l_l2_data_url:
+        nexturl_l2 = i
+        while True:
+            html2 = HtmlDownloader().download_html(nexturl_l2)
+            nexturl, l_l3_data_url = handler.parse_l2_data_2_urls(html2, nexturl_l2)
+            persist_list = []
+            for i in l_l3_data_url:
+                html3 = HtmlDownloader().download_html(i)
+                r = handler.parse_l3_data_2_persist(html3, i)
+                persist_list.append(r)
+            is_stop = handler.persist(persist_list)
+            if nexturl is None:
+                break
+            if is_stop:
+                break
+
+
 def get_2_level_data(starturl, handler):
     nexturl = starturl
     while True:
+        time.sleep(config.SLEEP_TIME)
         html1 = HtmlDownloader().download_html(nexturl)
-        nexturl, l_l2_data_url = handler.parse_l1_data(html1)
+        nexturl, l_l2_data_url = handler.parse_l1_data_2_urls(html1, nexturl)
+        persist_list=[]
         for i in l_l2_data_url:
             html2 = HtmlDownloader().download_html(i)
-            m_row = handler.parse_l2_data(html2)
-            handler.persist(m_row)
+            r = handler.parse_l2_data_2_persist(html2, i)
+            persist_list.append(r)
+        is_stop = handler.persist(persist_list)
         if nexturl is None:
+            break
+        if is_stop:
             break
 
 def get_1_level_data(starturl, handler):
-    html1 = HtmlDownloader().download_html(starturl)
-    next_url, m_row = handler.parse_l1_data(html1)
-    handler.persist(m_row)
-    return next_url
+    nexturl = starturl
+    while True:
+        time.sleep(config.SLEEP_TIME)
+        html1 = HtmlDownloader().download_html(nexturl)
+        nexturl, list_r = handler.parse_l1_data(html1, nexturl)
+        is_stop = handler.persist(list_r)
+        if nexturl is None:
+            break
+        if is_stop:
+            break
+
 
 #main of this proj
 def lianjia_spider_dispatcher():
     prepare()
-    for i in l_deal_start_urls:
-        get_2_level_data(i, DealInfoHandler())
-    for i in l_sale_start_urls:
-        get_2_level_data(i, SaleInfoHandler())
-    for i in dict_district_start_url:
-        get_1_level_data(dict_district_start_url[i], RegionInfoHandler())
+    for i in config.dict_district_start_url:
+        get_1_level_data(config.dict_district_start_url[i], RegionInfoHandler())
 
+    for i in config.l_deal_start_urls:
+        get_2_level_data(i, DealInfoHandler())
+    '''
+    for i in config.l_sale_start_urls:
+        get_2_level_data(i, SaleInfoHandler())
+
+    '''
 if __name__ == '__main__':
     lianjia_spider_dispatcher()

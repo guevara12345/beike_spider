@@ -22,6 +22,7 @@ class HtmlDownloader:
                 time.sleep(0)
                 rsp = requests.get(url, timeout=5, headers=HEADERS)
                 if 200 == rsp.status_code:
+                    print('download {} done'.format(url))
                     return rsp.text
             except Exception as e:
                 print('download {} throw exception {}'.format(url, e))
