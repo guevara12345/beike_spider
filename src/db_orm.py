@@ -24,14 +24,17 @@ class SaleInfo(Base):
     )
 
     code = Column(String(100), primary_key=True)
+
     total_price = Column(String(100))
     unit_price = Column(String(100))
+
     room = Column(String(100))
     floor = Column(String(100))
-
     build_area = Column(String(100))
     huxing = Column(String(100))
+
     house_area = Column(String(100))
+    building_type = Column(String(100))
     orientations = Column(String(100))
     buiding_texture = Column(String(100))
 
@@ -41,7 +44,7 @@ class SaleInfo(Base):
     is_elevator_exist = Column(String(100))
     property_right = Column(String(100))
 
-    building_type = Column(String(100))
+
     xiaoqu = Column(String(100))
     region = Column(String(100))
     guapai_time = Column(String(100))

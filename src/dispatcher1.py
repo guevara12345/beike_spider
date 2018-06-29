@@ -69,17 +69,19 @@ def get_1_level_data(starturl, handler):
 
 
 #main of this proj
-def lianjia_spider_dispatcher():
+def beike_dispacher():
     prepare()
     for i in config.dict_district_start_url:
         get_1_level_data(config.dict_district_start_url[i], RegionInfoHandler())
 
     for i in config.l_deal_start_urls:
-        get_2_level_data(i, DealInfoHandler())
+        get_3_level_data(i, DealInfoHandler())
     '''
     for i in config.l_sale_start_urls:
         get_2_level_data(i, SaleInfoHandler())
 
     '''
+
+
 if __name__ == '__main__':
-    lianjia_spider_dispatcher()
+    beike_dispacher()

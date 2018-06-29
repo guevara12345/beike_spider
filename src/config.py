@@ -4,7 +4,7 @@ BUILD_AGE = {'0-5': 'y1', '0-10': 'y2', '0-15': 'y3', '0-20': 'y4', }
 HOUSE_TYPE = {'1': 'l1', '2': 'l2', '3': 'l3', '4': 'l4'}
 BOUND = '{}{}bp{}ep{}'.format(BUILD_AGE['0-20'], HOUSE_TYPE['2'], MIN_PRICE, MAX_PRICE)
 
-SLEEP_TIME = 5
+SLEEP_TIME = 0
 
 #各区在售二手房爬取开始页面
 l_sale_start_urls = [
