@@ -16,7 +16,7 @@ l_sale_start_urls = [
     #'https://bj.ke.com/ershoufang/xicheng/pg{}{}'.format(1, BOUND),
     'https://bj.ke.com/ershoufang/chaoyang/pg{}{}'.format(1, BOUND),
     'https://bj.ke.com/ershoufang/haidian/pg{}{}'.format(1, BOUND),
-    #'https://bj.ke.com/ershoufang/fengtai/pg{}{}'.format(1, BOUND),
+    'https://bj.ke.com/ershoufang/fengtai/pg{}{}'.format(1, BOUND),
     #'https://bj.ke.com/ershoufang/shijingshan/pg{}{}'.format(1, BOUND),
     #'https://bj.ke.com/ershoufang/tongzhou/pg{}{}'.format(1, BOUND),
     #'https://bj.ke.com/ershoufang/changping/pg{}{}'.format(1, BOUND)
@@ -45,13 +45,13 @@ l_deal_start_urls = [
 ]
 
 chaoyang_far_region = [
-    '北工大', '百子湾', '成寿寺', '常营', '朝阳门外',
-    'CBD', '朝青', '朝阳公园', '东坝', '大望路',
+    '北工大', '百子湾', '成寿寺', '常营',
+    'CBD', '东坝', '大望路',
     '东大桥', '大山子', '豆各庄', '定福庄', '方庄',
     '垡头', '广渠门', '高碑店', '国展', '甘露园',
-    '管庄', '欢乐谷', '红庙', '华威桥', '酒仙桥',
-    '劲松', '建国门外', '农展馆', '潘家园', '石佛营',
+    '管庄', '欢乐谷', '华威桥', '酒仙桥',
+    '劲松','潘家园',
     '十里堡', '首都机场', '双井', '十里河', '十八里店',
-    '双桥', '三里屯', '四惠', '通州北苑', '团结湖',
+    '双桥', '三里屯', '四惠', '通州北苑',
     '太阳宫', '甜水园', '望京', '西坝河', '燕莎', '中央别墅区', '朝阳其它'
 ]

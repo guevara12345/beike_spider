@@ -88,11 +88,11 @@ def beike_dispacher():
     for i in config.dict_district_start_url:
         get_1_level_data(config.dict_district_start_url[i], RegionInfoHandler())
     show_result.show_sale_info()
-
+    '''
     SaleInfoHandler().clear_table()
     for i in config.l_sale_start_urls:
         get_2_level_data(i, SaleInfoHandler())
-    '''
+    
 
     for i in config.l_deal_start_urls:
         get_3_level_data(i, DealInfoHandler())
