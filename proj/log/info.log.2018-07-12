@@ -1,0 +1,433 @@
+2018-07-12 14:44:26,149 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/xiaoqu/dongcheng/ done
+2018-07-12 14:44:26,214 - parser1.py - [line:33] - INFO - parse https://bj.ke.com/xiaoqu/dongcheng/, return 28 items of region data
+2018-07-12 14:44:26,296 - parser1.py - [line:42] - INFO - persist 28 items of region data
+2018-07-12 14:44:33,694 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/xiaoqu/xicheng/ done
+2018-07-12 14:44:33,758 - parser1.py - [line:33] - INFO - parse https://bj.ke.com/xiaoqu/xicheng/, return 26 items of region data
+2018-07-12 14:44:33,801 - parser1.py - [line:42] - INFO - persist 26 items of region data
+2018-07-12 14:44:35,398 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/xiaoqu/chaoyang/ done
+2018-07-12 14:44:35,472 - parser1.py - [line:33] - INFO - parse https://bj.ke.com/xiaoqu/chaoyang/, return 63 items of region data
+2018-07-12 14:44:35,567 - parser1.py - [line:42] - INFO - persist 63 items of region data
+2018-07-12 14:44:39,383 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/xiaoqu/haidian/ done
+2018-07-12 14:44:39,449 - parser1.py - [line:33] - INFO - parse https://bj.ke.com/xiaoqu/haidian/, return 45 items of region data
+2018-07-12 14:44:39,519 - parser1.py - [line:42] - INFO - persist 45 items of region data
+2018-07-12 14:44:41,173 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/xiaoqu/fengtai/ done
+2018-07-12 14:44:41,234 - parser1.py - [line:33] - INFO - parse https://bj.ke.com/xiaoqu/fengtai/, return 37 items of region data
+2018-07-12 14:44:41,290 - parser1.py - [line:42] - INFO - persist 37 items of region data
+2018-07-12 14:44:42,927 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/xiaoqu/shijingshan/ done
+2018-07-12 14:44:42,963 - parser1.py - [line:33] - INFO - parse https://bj.ke.com/xiaoqu/shijingshan/, return 9 items of region data
+2018-07-12 14:44:42,992 - parser1.py - [line:42] - INFO - persist 9 items of region data
+2018-07-12 14:44:45,066 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/xiaoqu/tongzhou/ done
+2018-07-12 14:44:45,118 - parser1.py - [line:33] - INFO - parse https://bj.ke.com/xiaoqu/tongzhou/, return 16 items of region data
+2018-07-12 14:44:45,157 - parser1.py - [line:42] - INFO - persist 16 items of region data
+2018-07-12 14:44:47,135 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/xiaoqu/changping/ done
+2018-07-12 14:44:47,190 - parser1.py - [line:33] - INFO - parse https://bj.ke.com/xiaoqu/changping/, return 17 items of region data
+2018-07-12 14:44:47,229 - parser1.py - [line:42] - INFO - persist 17 items of region data
+2018-07-12 14:44:48,429 - parser1.py - [line:59] - INFO - clear done
+2018-07-12 14:44:50,800 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/chaoyang/pg1y4l2bp650ep900 done
+2018-07-12 14:44:50,823 - parser1.py - [line:85] - INFO - parse l1 sale data of https://bj.ke.com/ershoufang/chaoyang/pg1y4l2bp650ep900 done
+	next_page = https://bj.ke.com/ershoufang/chaoyang/pg2y4l2bp650ep900/
+	len(l_next_level_urls) = 30
+2018-07-12 14:44:52,994 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102934439.html done
+2018-07-12 14:44:53,018 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102934439.html done
+2018-07-12 14:44:54,290 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102770393.html done
+2018-07-12 14:44:54,317 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102770393.html done
+2018-07-12 14:44:56,701 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102973079.html done
+2018-07-12 14:44:56,765 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102973079.html done
+2018-07-12 14:44:58,011 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102997573.html done
+2018-07-12 14:44:58,037 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102997573.html done
+2018-07-12 14:45:05,474 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102695490.html done
+2018-07-12 14:45:05,536 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102695490.html done
+2018-07-12 14:45:06,718 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102876639.html done
+2018-07-12 14:45:06,777 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102876639.html done
+2018-07-12 14:45:07,980 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102672635.html done
+2018-07-12 14:45:08,010 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102672635.html done
+2018-07-12 14:45:09,851 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102798605.html done
+2018-07-12 14:45:09,883 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102798605.html done
+2018-07-12 14:45:11,961 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102997041.html done
+2018-07-12 14:45:12,003 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102997041.html done
+2018-07-12 14:45:15,231 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101101841236.html done
+2018-07-12 14:45:15,289 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101101841236.html done
+2018-07-12 14:45:17,112 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102689825.html done
+2018-07-12 14:45:17,159 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102689825.html done
+2018-07-12 14:45:19,911 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103022548.html done
+2018-07-12 14:45:19,941 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103022548.html done
+2018-07-12 14:45:21,262 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103044173.html done
+2018-07-12 14:45:21,294 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103044173.html done
+2018-07-12 14:45:22,541 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102615183.html done
+2018-07-12 14:45:22,587 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102615183.html done
+2018-07-12 14:45:23,859 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103023658.html done
+2018-07-12 14:45:23,907 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103023658.html done
+2018-07-12 14:45:25,633 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103033282.html done
+2018-07-12 14:45:25,653 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103033282.html done
+2018-07-12 14:45:26,806 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102983348.html done
+2018-07-12 14:45:26,853 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102983348.html done
+2018-07-12 14:45:28,840 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102986616.html done
+2018-07-12 14:45:28,888 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102986616.html done
+2018-07-12 14:45:30,263 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103031806.html done
+2018-07-12 14:45:30,314 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103031806.html done
+2018-07-12 14:45:32,030 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102674087.html done
+2018-07-12 14:45:32,064 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102674087.html done
+2018-07-12 14:45:33,241 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102794926.html done
+2018-07-12 14:45:33,261 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102794926.html done
+2018-07-12 14:45:34,503 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102887747.html done
+2018-07-12 14:45:34,561 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102887747.html done
+2018-07-12 14:45:35,714 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102974244.html done
+2018-07-12 14:45:35,754 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102974244.html done
+2018-07-12 14:45:36,918 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103055462.html done
+2018-07-12 14:45:36,969 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103055462.html done
+2018-07-12 14:45:38,253 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102656638.html done
+2018-07-12 14:45:38,309 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102656638.html done
+2018-07-12 14:45:39,552 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102450643.html done
+2018-07-12 14:45:39,572 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102450643.html done
+2018-07-12 14:45:40,884 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102695563.html done
+2018-07-12 14:45:40,948 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102695563.html done
+2018-07-12 14:45:43,502 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102717331.html done
+2018-07-12 14:45:43,555 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102717331.html done
+2018-07-12 14:45:45,410 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102762273.html done
+2018-07-12 14:45:45,463 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102762273.html done
+2018-07-12 14:45:46,646 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102773474.html done
+2018-07-12 14:45:46,702 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102773474.html done
+2018-07-12 14:45:46,899 - parser1.py - [line:199] - INFO - persist 30 items of data, and is_stop = False
+2018-07-12 14:45:47,868 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/chaoyang/pg2y4l2bp650ep900/ done
+2018-07-12 14:45:47,910 - parser1.py - [line:85] - INFO - parse l1 sale data of https://bj.ke.com/ershoufang/chaoyang/pg2y4l2bp650ep900/ done
+	next_page = https://bj.ke.com/ershoufang/chaoyang/pg3y4l2bp650ep900/
+	len(l_next_level_urls) = 30
+2018-07-12 14:45:49,335 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102908894.html done
+2018-07-12 14:45:49,381 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102908894.html done
+2018-07-12 14:45:51,131 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102914298.html done
+2018-07-12 14:45:51,179 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102914298.html done
+2018-07-12 14:45:53,788 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101101869437.html done
+2018-07-12 14:45:53,843 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101101869437.html done
+2018-07-12 14:45:55,037 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102253793.html done
+2018-07-12 14:45:55,083 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102253793.html done
+2018-07-12 14:45:56,963 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102386025.html done
+2018-07-12 14:45:57,012 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102386025.html done
+2018-07-12 14:45:58,327 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102436826.html done
+2018-07-12 14:45:58,380 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102436826.html done
+2018-07-12 14:45:59,533 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102811255.html done
+2018-07-12 14:45:59,580 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102811255.html done
+2018-07-12 14:46:00,961 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103003767.html done
+2018-07-12 14:46:01,014 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103003767.html done
+2018-07-12 14:46:03,122 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102835609.html done
+2018-07-12 14:46:03,176 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102835609.html done
+2018-07-12 14:46:04,850 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103047798.html done
+2018-07-12 14:46:04,887 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103047798.html done
+2018-07-12 14:46:07,037 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102983059.html done
+2018-07-12 14:46:07,068 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102983059.html done
+2018-07-12 14:46:08,236 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102987926.html done
+2018-07-12 14:46:08,288 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102987926.html done
+2018-07-12 14:46:09,523 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103074112.html done
+2018-07-12 14:46:09,569 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103074112.html done
+2018-07-12 14:46:10,719 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103057183.html done
+2018-07-12 14:46:10,767 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103057183.html done
+2018-07-12 14:46:11,988 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102990339.html done
+2018-07-12 14:46:12,053 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102990339.html done
+2018-07-12 14:46:13,354 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103031228.html done
+2018-07-12 14:46:13,405 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103031228.html done
+2018-07-12 14:46:15,263 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103057645.html done
+2018-07-12 14:46:15,321 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103057645.html done
+2018-07-12 14:46:16,429 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102699640.html done
+2018-07-12 14:46:16,476 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102699640.html done
+2018-07-12 14:46:17,567 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102915523.html done
+2018-07-12 14:46:17,588 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102915523.html done
+2018-07-12 14:46:21,077 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103021946.html done
+2018-07-12 14:46:21,118 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103021946.html done
+2018-07-12 14:46:23,161 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103025953.html done
+2018-07-12 14:46:23,204 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103025953.html done
+2018-07-12 14:46:25,724 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102922641.html done
+2018-07-12 14:46:25,769 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102922641.html done
+2018-07-12 14:46:27,367 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102961318.html done
+2018-07-12 14:46:27,437 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102961318.html done
+2018-07-12 14:46:28,639 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102964189.html done
+2018-07-12 14:46:28,688 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102964189.html done
+2018-07-12 14:46:29,907 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102826913.html done
+2018-07-12 14:46:29,965 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102826913.html done
+2018-07-12 14:46:31,543 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102929396.html done
+2018-07-12 14:46:31,597 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102929396.html done
+2018-07-12 14:46:32,847 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101101684229.html done
+2018-07-12 14:46:32,905 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101101684229.html done
+2018-07-12 14:46:34,326 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102252594.html done
+2018-07-12 14:46:34,368 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102252594.html done
+2018-07-12 14:46:36,426 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102682372.html done
+2018-07-12 14:46:36,480 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102682372.html done
+2018-07-12 14:46:37,781 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102713868.html done
+2018-07-12 14:46:37,829 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102713868.html done
+2018-07-12 14:46:38,116 - parser1.py - [line:199] - INFO - persist 30 items of data, and is_stop = False
+2018-07-12 14:46:39,212 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/chaoyang/pg3y4l2bp650ep900/ done
+2018-07-12 14:46:39,261 - parser1.py - [line:85] - INFO - parse l1 sale data of https://bj.ke.com/ershoufang/chaoyang/pg3y4l2bp650ep900/ done
+	next_page = https://bj.ke.com/ershoufang/chaoyang/pg4y4l2bp650ep900/
+	len(l_next_level_urls) = 30
+2018-07-12 14:46:40,772 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102720366.html done
+2018-07-12 14:46:40,825 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102720366.html done
+2018-07-12 14:46:41,955 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102743099.html done
+2018-07-12 14:46:41,985 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102743099.html done
+2018-07-12 14:46:43,365 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102743310.html done
+2018-07-12 14:46:43,410 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102743310.html done
+2018-07-12 14:46:45,185 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102767445.html done
+2018-07-12 14:46:45,227 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102767445.html done
+2018-07-12 14:46:47,349 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102772676.html done
+2018-07-12 14:46:47,398 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102772676.html done
+2018-07-12 14:46:48,467 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102797019.html done
+2018-07-12 14:46:48,511 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102797019.html done
+2018-07-12 14:46:49,834 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102827325.html done
+2018-07-12 14:46:49,885 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102827325.html done
+2018-07-12 14:46:54,445 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102862381.html done
+2018-07-12 14:46:54,493 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102862381.html done
+2018-07-12 14:46:55,625 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102870759.html done
+2018-07-12 14:46:55,676 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102870759.html done
+2018-07-12 14:46:56,904 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102885429.html done
+2018-07-12 14:46:56,953 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102885429.html done
+2018-07-12 14:46:58,371 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102897565.html done
+2018-07-12 14:46:58,423 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102897565.html done
+2018-07-12 14:47:03,262 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102915524.html done
+2018-07-12 14:47:03,308 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102915524.html done
+2018-07-12 14:47:04,785 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102946330.html done
+2018-07-12 14:47:04,818 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102946330.html done
+2018-07-12 14:47:06,103 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101101970437.html done
+2018-07-12 14:47:06,134 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101101970437.html done
+2018-07-12 14:47:07,554 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102254908.html done
+2018-07-12 14:47:07,610 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102254908.html done
+2018-07-12 14:47:09,366 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102554571.html done
+2018-07-12 14:47:09,423 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102554571.html done
+2018-07-12 14:47:15,942 - downloader1.py - [line:28] - INFO - download https://bj.ke.com/ershoufang/101102569714.html throw exception HTTPSConnectionPool(host='bj.ke.com', port=443): Read timed out.
+2018-07-12 14:47:21,535 - downloader1.py - [line:28] - INFO - download https://bj.ke.com/ershoufang/101102569714.html throw exception HTTPSConnectionPool(host='bj.ke.com', port=443): Read timed out. (read timeout=5)
+2018-07-12 14:47:27,780 - downloader1.py - [line:28] - INFO - download https://bj.ke.com/ershoufang/101102569714.html throw exception HTTPSConnectionPool(host='bj.ke.com', port=443): Read timed out. (read timeout=5)
+2018-07-12 14:47:32,983 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102569714.html done
+2018-07-12 14:47:33,040 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102569714.html done
+2018-07-12 14:47:35,189 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102799706.html done
+2018-07-12 14:47:35,248 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102799706.html done
+2018-07-12 14:47:37,619 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102832830.html done
+2018-07-12 14:47:37,676 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102832830.html done
+2018-07-12 14:47:42,005 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102935701.html done
+2018-07-12 14:47:42,058 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102935701.html done
+2018-07-12 14:47:43,937 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103021849.html done
+2018-07-12 14:47:43,982 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103021849.html done
+2018-07-12 14:47:45,432 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103021871.html done
+2018-07-12 14:47:45,467 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103021871.html done
+2018-07-12 14:47:46,867 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101101991771.html done
+2018-07-12 14:47:46,895 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101101991771.html done
+2018-07-12 14:47:48,074 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102794492.html done
+2018-07-12 14:47:48,108 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102794492.html done
+2018-07-12 14:47:49,200 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102905254.html done
+2018-07-12 14:47:49,256 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102905254.html done
+2018-07-12 14:47:52,382 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102478406.html done
+2018-07-12 14:47:52,433 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102478406.html done
+2018-07-12 14:47:53,904 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102838493.html done
+2018-07-12 14:47:53,949 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102838493.html done
+2018-07-12 14:47:55,494 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102982929.html done
+2018-07-12 14:47:55,542 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102982929.html done
+2018-07-12 14:48:03,507 - downloader1.py - [line:28] - INFO - download https://bj.ke.com/ershoufang/101103010024.html throw exception HTTPSConnectionPool(host='bj.ke.com', port=443): Read timed out.
+2018-07-12 14:48:07,184 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103010024.html done
+2018-07-12 14:48:07,204 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103010024.html done
+2018-07-12 14:48:08,905 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103010028.html done
+2018-07-12 14:48:08,965 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103010028.html done
+2018-07-12 14:48:09,142 - parser1.py - [line:199] - INFO - persist 30 items of data, and is_stop = False
+2018-07-12 14:48:10,178 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/chaoyang/pg4y4l2bp650ep900/ done
+2018-07-12 14:48:10,224 - parser1.py - [line:85] - INFO - parse l1 sale data of https://bj.ke.com/ershoufang/chaoyang/pg4y4l2bp650ep900/ done
+	next_page = https://bj.ke.com/ershoufang/chaoyang/pg5y4l2bp650ep900/
+	len(l_next_level_urls) = 30
+2018-07-12 14:48:11,407 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102489143.html done
+2018-07-12 14:48:11,457 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102489143.html done
+2018-07-12 14:48:12,570 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102659811.html done
+2018-07-12 14:48:12,629 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102659811.html done
+2018-07-12 14:48:13,790 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102843052.html done
+2018-07-12 14:48:13,832 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102843052.html done
+2018-07-12 14:48:15,693 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102925186.html done
+2018-07-12 14:48:15,746 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102925186.html done
+2018-07-12 14:48:17,012 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101101370215.html done
+2018-07-12 14:48:17,066 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101101370215.html done
+2018-07-12 14:48:19,032 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101101977290.html done
+2018-07-12 14:48:19,053 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101101977290.html done
+2018-07-12 14:48:20,572 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102303213.html done
+2018-07-12 14:48:20,624 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102303213.html done
+2018-07-12 14:48:21,793 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102675036.html done
+2018-07-12 14:48:21,838 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102675036.html done
+2018-07-12 14:48:24,405 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102960027.html done
+2018-07-12 14:48:24,451 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102960027.html done
+2018-07-12 14:48:25,581 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102964257.html done
+2018-07-12 14:48:25,631 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102964257.html done
+2018-07-12 14:48:27,832 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102973189.html done
+2018-07-12 14:48:27,878 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102973189.html done
+2018-07-12 14:48:29,871 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102978934.html done
+2018-07-12 14:48:29,918 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102978934.html done
+2018-07-12 14:48:31,288 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102984971.html done
+2018-07-12 14:48:31,348 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102984971.html done
+2018-07-12 14:48:34,469 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102987793.html done
+2018-07-12 14:48:34,524 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102987793.html done
+2018-07-12 14:48:35,832 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102997530.html done
+2018-07-12 14:48:35,882 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102997530.html done
+2018-07-12 14:48:37,425 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101101597576.html done
+2018-07-12 14:48:37,489 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101101597576.html done
+2018-07-12 14:48:38,762 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102292739.html done
+2018-07-12 14:48:38,800 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102292739.html done
+2018-07-12 14:48:40,019 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102824873.html done
+2018-07-12 14:48:40,059 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102824873.html done
+2018-07-12 14:48:41,255 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102848857.html done
+2018-07-12 14:48:41,310 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102848857.html done
+2018-07-12 14:48:42,475 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102918338.html done
+2018-07-12 14:48:42,521 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102918338.html done
+2018-07-12 14:48:43,751 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102920020.html done
+2018-07-12 14:48:43,796 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102920020.html done
+2018-07-12 14:48:45,207 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103032535.html done
+2018-07-12 14:48:45,266 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103032535.html done
+2018-07-12 14:48:46,598 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103032793.html done
+2018-07-12 14:48:46,647 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103032793.html done
+2018-07-12 14:48:49,118 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103033740.html done
+2018-07-12 14:48:49,170 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103033740.html done
+2018-07-12 14:48:51,211 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103042502.html done
+2018-07-12 14:48:51,268 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103042502.html done
+2018-07-12 14:48:52,446 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102531319.html done
+2018-07-12 14:48:52,499 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102531319.html done
+2018-07-12 14:48:53,732 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102712894.html done
+2018-07-12 14:48:53,782 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102712894.html done
+2018-07-12 14:48:55,256 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102878947.html done
+2018-07-12 14:48:55,315 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102878947.html done
+2018-07-12 14:48:56,456 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102222436.html done
+2018-07-12 14:48:56,501 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102222436.html done
+2018-07-12 14:48:57,696 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102872875.html done
+2018-07-12 14:48:57,746 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102872875.html done
+2018-07-12 14:48:58,001 - parser1.py - [line:199] - INFO - persist 30 items of data, and is_stop = False
+2018-07-12 14:48:58,915 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/chaoyang/pg5y4l2bp650ep900/ done
+2018-07-12 14:48:58,957 - parser1.py - [line:85] - INFO - parse l1 sale data of https://bj.ke.com/ershoufang/chaoyang/pg5y4l2bp650ep900/ done
+	next_page = https://bj.ke.com/ershoufang/chaoyang/pg6y4l2bp650ep900/
+	len(l_next_level_urls) = 30
+2018-07-12 14:49:00,553 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103049021.html done
+2018-07-12 14:49:00,599 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103049021.html done
+2018-07-12 14:49:02,599 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101101969690.html done
+2018-07-12 14:49:02,649 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101101969690.html done
+2018-07-12 14:49:03,844 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102167260.html done
+2018-07-12 14:49:03,898 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102167260.html done
+2018-07-12 14:49:05,488 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102501830.html done
+2018-07-12 14:49:05,537 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102501830.html done
+2018-07-12 14:49:07,063 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102552162.html done
+2018-07-12 14:49:07,098 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102552162.html done
+2018-07-12 14:49:10,316 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102865474.html done
+2018-07-12 14:49:10,377 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102865474.html done
+2018-07-12 14:49:11,619 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102909415.html done
+2018-07-12 14:49:11,667 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102909415.html done
+2018-07-12 14:49:13,220 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102913781.html done
+2018-07-12 14:49:13,271 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102913781.html done
+2018-07-12 14:49:14,822 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103021972.html done
+2018-07-12 14:49:14,874 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103021972.html done
+2018-07-12 14:49:17,049 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103047910.html done
+2018-07-12 14:49:17,069 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103047910.html done
+2018-07-12 14:49:18,586 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102974781.html done
+2018-07-12 14:49:18,608 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102974781.html done
+2018-07-12 14:49:20,452 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101101582090.html done
+2018-07-12 14:49:20,500 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101101582090.html done
+2018-07-12 14:49:21,863 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102164686.html done
+2018-07-12 14:49:21,921 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102164686.html done
+2018-07-12 14:49:23,562 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102230790.html done
+2018-07-12 14:49:23,596 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102230790.html done
+2018-07-12 14:49:24,694 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102290212.html done
+2018-07-12 14:49:24,753 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102290212.html done
+2018-07-12 14:49:25,985 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102509654.html done
+2018-07-12 14:49:26,044 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102509654.html done
+2018-07-12 14:49:29,599 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102550141.html done
+2018-07-12 14:49:29,646 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102550141.html done
+2018-07-12 14:49:30,602 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102600028.html done
+2018-07-12 14:49:30,654 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102600028.html done
+2018-07-12 14:49:37,862 - downloader1.py - [line:28] - INFO - download https://bj.ke.com/ershoufang/101102615038.html throw exception HTTPSConnectionPool(host='bj.ke.com', port=443): Read timed out.
+2018-07-12 14:49:44,984 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102615038.html done
+2018-07-12 14:49:45,029 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102615038.html done
+2018-07-12 14:49:46,390 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102666442.html done
+2018-07-12 14:49:46,435 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102666442.html done
+2018-07-12 14:49:47,626 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102678709.html done
+2018-07-12 14:49:47,677 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102678709.html done
+2018-07-12 14:49:48,753 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102684477.html done
+2018-07-12 14:49:48,797 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102684477.html done
+2018-07-12 14:49:50,161 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102720231.html done
+2018-07-12 14:49:50,201 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102720231.html done
+2018-07-12 14:49:51,485 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102721304.html done
+2018-07-12 14:49:51,538 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102721304.html done
+2018-07-12 14:49:53,225 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102784365.html done
+2018-07-12 14:49:53,266 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102784365.html done
+2018-07-12 14:49:57,119 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102817067.html done
+2018-07-12 14:49:57,164 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102817067.html done
+2018-07-12 14:49:58,865 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102837310.html done
+2018-07-12 14:49:58,922 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102837310.html done
+2018-07-12 14:50:02,297 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102844832.html done
+2018-07-12 14:50:02,340 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102844832.html done
+2018-07-12 14:50:09,971 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102910713.html done
+2018-07-12 14:50:10,018 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102910713.html done
+2018-07-12 14:50:13,139 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102260087.html done
+2018-07-12 14:50:13,199 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102260087.html done
+2018-07-12 14:50:13,461 - parser1.py - [line:199] - INFO - persist 30 items of data, and is_stop = False
+2018-07-12 14:50:16,685 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/chaoyang/pg6y4l2bp650ep900/ done
+2018-07-12 14:50:16,732 - parser1.py - [line:85] - INFO - parse l1 sale data of https://bj.ke.com/ershoufang/chaoyang/pg6y4l2bp650ep900/ done
+	next_page = https://bj.ke.com/ershoufang/chaoyang/pg7y4l2bp650ep900/
+	len(l_next_level_urls) = 30
+2018-07-12 14:50:18,291 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102260087.html done
+2018-07-12 14:50:18,336 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102260087.html done
+2018-07-12 14:50:19,525 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102554374.html done
+2018-07-12 14:50:19,558 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102554374.html done
+2018-07-12 14:50:20,717 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102948899.html done
+2018-07-12 14:50:20,763 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102948899.html done
+2018-07-12 14:50:23,287 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102770785.html done
+2018-07-12 14:50:23,311 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102770785.html done
+2018-07-12 14:50:24,871 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102987574.html done
+2018-07-12 14:50:24,926 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102987574.html done
+2018-07-12 14:50:29,682 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103045155.html done
+2018-07-12 14:50:29,729 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103045155.html done
+2018-07-12 14:50:30,902 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102345641.html done
+2018-07-12 14:50:30,957 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102345641.html done
+2018-07-12 14:50:33,429 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102695464.html done
+2018-07-12 14:50:33,487 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102695464.html done
+2018-07-12 14:50:34,705 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102674032.html done
+2018-07-12 14:50:34,751 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102674032.html done
+2018-07-12 14:50:36,129 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102410557.html done
+2018-07-12 14:50:36,180 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102410557.html done
+2018-07-12 14:50:38,549 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102966942.html done
+2018-07-12 14:50:38,606 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102966942.html done
+2018-07-12 14:50:42,792 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102970570.html done
+2018-07-12 14:50:42,840 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102970570.html done
+2018-07-12 14:50:44,227 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102971276.html done
+2018-07-12 14:50:44,279 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102971276.html done
+2018-07-12 14:50:46,075 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102973276.html done
+2018-07-12 14:50:46,132 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102973276.html done
+2018-07-12 14:50:49,300 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102982120.html done
+2018-07-12 14:50:49,354 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102982120.html done
+2018-07-12 14:50:50,926 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102986979.html done
+2018-07-12 14:50:50,969 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102986979.html done
+2018-07-12 14:51:00,996 - downloader1.py - [line:28] - INFO - download https://bj.ke.com/ershoufang/101102991567.html throw exception HTTPSConnectionPool(host='bj.ke.com', port=443): Read timed out.
+2018-07-12 14:51:04,845 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102991567.html done
+2018-07-12 14:51:04,889 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102991567.html done
+2018-07-12 14:51:09,994 - downloader1.py - [line:28] - INFO - download https://bj.ke.com/ershoufang/101102993140.html throw exception HTTPSConnectionPool(host='bj.ke.com', port=443): Read timed out. (read timeout=5)
+2018-07-12 14:51:19,886 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102993140.html done
+2018-07-12 14:51:19,914 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102993140.html done
+2018-07-12 14:51:22,524 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102117587.html done
+2018-07-12 14:51:22,567 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102117587.html done
+2018-07-12 14:51:27,100 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101102804431.html done
+2018-07-12 14:51:27,137 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101102804431.html done
+2018-07-12 14:51:28,414 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103011581.html done
+2018-07-12 14:51:28,450 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103011581.html done
+2018-07-12 14:51:30,027 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103018312.html done
+2018-07-12 14:51:30,074 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103018312.html done
+2018-07-12 14:51:31,314 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103022894.html done
+2018-07-12 14:51:31,335 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103022894.html done
+2018-07-12 14:51:32,749 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103025178.html done
+2018-07-12 14:51:32,781 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103025178.html done
+2018-07-12 14:51:42,041 - downloader1.py - [line:28] - INFO - download https://bj.ke.com/ershoufang/101103030468.html throw exception HTTPSConnectionPool(host='bj.ke.com', port=443): Read timed out.
+2018-07-12 14:51:43,814 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103030468.html done
+2018-07-12 14:51:43,850 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103030468.html done
+2018-07-12 14:51:45,552 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103032125.html done
+2018-07-12 14:51:45,609 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103032125.html done
+2018-07-12 14:51:46,914 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103032462.html done
+2018-07-12 14:51:46,962 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103032462.html done
+2018-07-12 14:51:49,193 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103034316.html done
+2018-07-12 14:51:49,242 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103034316.html done
+2018-07-12 14:51:53,455 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103038500.html done
+2018-07-12 14:51:53,477 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103038500.html done
+2018-07-12 14:51:55,835 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/101103050935.html done
+2018-07-12 14:51:55,889 - parser1.py - [line:177] - INFO - parse l2 sale data of https://bj.ke.com/ershoufang/101103050935.html done
+2018-07-12 14:51:56,229 - parser1.py - [line:199] - INFO - persist 30 items of data, and is_stop = False
+2018-07-12 14:51:59,326 - downloader1.py - [line:25] - INFO - download https://bj.ke.com/ershoufang/chaoyang/pg7y4l2bp650ep900/ done
+2018-07-12 14:51:59,367 - parser1.py - [line:85] - INFO - parse l1 sale data of https://bj.ke.com/ershoufang/chaoyang/pg7y4l2bp650ep900/ done
+	next_page = https://bj.ke.com/ershoufang/chaoyang/pg8y4l2bp650ep900/
+	len(l_next_level_urls) = 30
+2018-07-12 14:52:07,838 - downloader1.py - [line:28] - INFO - download https://bj.ke.com/ershoufang/101101406352.html throw exception HTTPSConnectionPool(host='bj.ke.com', port=443): Read timed out. (read timeout=5)
+2018-07-12 14:52:12,855 - downloader1.py - [line:28] - INFO - download https://bj.ke.com/ershoufang/101101406352.html throw exception HTTPSConnectionPool(host='bj.ke.com', port=443): Max retries exceeded with url: /ershoufang/101101406352.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x000002985A9123C8>, 'Connection to bj.ke.com timed out. (connect timeout=5)'))
+2018-07-12 14:52:17,861 - downloader1.py - [line:28] - INFO - download https://bj.ke.com/ershoufang/101101406352.html throw exception HTTPSConnectionPool(host='bj.ke.com', port=443): Max retries exceeded with url: /ershoufang/101101406352.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x000002985A8C5780>, 'Connection to bj.ke.com timed out. (connect timeout=5)'))
+2018-07-12 14:52:22,909 - downloader1.py - [line:28] - INFO - download https://bj.ke.com/ershoufang/101101406352.html throw exception HTTPSConnectionPool(host='bj.ke.com', port=443): Max retries exceeded with url: /ershoufang/101101406352.html (Caused by ConnectTimeoutError(<urllib3.connection.VerifiedHTTPSConnection object at 0x000002985A8576A0>, 'Connection to bj.ke.com timed out. (connect timeout=5)'))
+2018-07-12 14:52:29,763 - downloader1.py - [line:28] - INFO - download https://bj.ke.com/ershoufang/101101406352.html throw exception HTTPSConnectionPool(host='bj.ke.com', port=443): Read timed out. (read timeout=5)
+2018-07-12 14:52:29,763 - parser1.py - [line:180] - ERROR - Exception:'NoneType' object has no attribute 'encode'

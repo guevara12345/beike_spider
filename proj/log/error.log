@@ -1,0 +1,78 @@
+2018-07-13 15:22:12,800 - parser1.py - [line:181] - ERROR - Url:https://bj.ke.com/ershoufang/101103037891.html
+2018-07-13 15:22:12,816 - parser1.py - [line:182] - ERROR - list index out of range
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 97, in parse_l2_data_2_persist
+    r"//div[@class='houseRecord']//span[@class='info']/text()")[0]).strip()
+IndexError: list index out of range
+2018-07-13 15:27:16,632 - parser1.py - [line:181] - ERROR - Url:https://bj.ke.com/ershoufang/101102988624.html
+2018-07-13 15:27:16,633 - parser1.py - [line:182] - ERROR - list index out of range
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 97, in parse_l2_data_2_persist
+    r"//div[@class='houseRecord']//span[@class='info']/text()")[0]).strip()
+IndexError: list index out of range
+2018-07-13 15:44:35,302 - parser1.py - [line:181] - ERROR - Url:https://bj.ke.com/ershoufang/101102826362.html
+2018-07-13 15:44:35,302 - parser1.py - [line:182] - ERROR - 'NoneType' object has no attribute 'encode'
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 94, in parse_l2_data_2_persist
+    selector = etree.HTML(html.encode('utf-8'))
+AttributeError: 'NoneType' object has no attribute 'encode'
+2018-07-13 15:44:35,345 - parser1.py - [line:181] - ERROR - Url:https://bj.ke.com/ershoufang/101102840369.html
+2018-07-13 15:44:35,345 - parser1.py - [line:182] - ERROR - 'NoneType' object has no attribute 'encode'
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 94, in parse_l2_data_2_persist
+    selector = etree.HTML(html.encode('utf-8'))
+AttributeError: 'NoneType' object has no attribute 'encode'
+2018-07-13 15:44:35,377 - parser1.py - [line:181] - ERROR - Url:https://bj.ke.com/ershoufang/101102844879.html
+2018-07-13 15:44:35,377 - parser1.py - [line:182] - ERROR - 'NoneType' object has no attribute 'encode'
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 94, in parse_l2_data_2_persist
+    selector = etree.HTML(html.encode('utf-8'))
+AttributeError: 'NoneType' object has no attribute 'encode'
+2018-07-13 15:44:35,417 - parser1.py - [line:181] - ERROR - Url:https://bj.ke.com/ershoufang/101102874615.html
+2018-07-13 15:44:35,418 - parser1.py - [line:182] - ERROR - 'NoneType' object has no attribute 'encode'
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 94, in parse_l2_data_2_persist
+    selector = etree.HTML(html.encode('utf-8'))
+AttributeError: 'NoneType' object has no attribute 'encode'
+2018-07-13 15:44:35,451 - parser1.py - [line:181] - ERROR - Url:https://bj.ke.com/ershoufang/101102912314.html
+2018-07-13 15:44:35,451 - parser1.py - [line:182] - ERROR - 'NoneType' object has no attribute 'encode'
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 94, in parse_l2_data_2_persist
+    selector = etree.HTML(html.encode('utf-8'))
+AttributeError: 'NoneType' object has no attribute 'encode'
+2018-07-13 15:44:35,484 - parser1.py - [line:181] - ERROR - Url:https://bj.ke.com/ershoufang/101102840494.html
+2018-07-13 15:44:35,485 - parser1.py - [line:182] - ERROR - 'NoneType' object has no attribute 'encode'
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 94, in parse_l2_data_2_persist
+    selector = etree.HTML(html.encode('utf-8'))
+AttributeError: 'NoneType' object has no attribute 'encode'
+2018-07-13 15:44:35,778 - parser1.py - [line:88] - ERROR - Url:https://bj.ke.com/ershoufang/haidian/pg8y4l2bp650ep900/
+2018-07-13 15:44:35,778 - parser1.py - [line:89] - ERROR - 'NoneType' object has no attribute 'encode'
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 72, in parse_l1_data_2_urls
+    selector = etree.HTML(html.encode('utf-8'))
+AttributeError: 'NoneType' object has no attribute 'encode'
+2018-07-13 15:44:35,809 - parser1.py - [line:88] - ERROR - Url:https://bj.ke.com/ershoufang/fengtai/pg1y4l2bp650ep900
+2018-07-13 15:44:35,809 - parser1.py - [line:89] - ERROR - 'NoneType' object has no attribute 'encode'
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 72, in parse_l1_data_2_urls
+    selector = etree.HTML(html.encode('utf-8'))
+AttributeError: 'NoneType' object has no attribute 'encode'
+2018-07-13 17:24:24,473 - parser1.py - [line:181] - ERROR - Url:https://bj.ke.com/ershoufang/101102970570.html
+2018-07-13 17:24:24,473 - parser1.py - [line:182] - ERROR - list index out of range
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 97, in parse_l2_data_2_persist
+    r"//div[@class='houseRecord']//span[@class='info']/text()")[0]).strip()
+IndexError: list index out of range
+2018-07-13 17:24:33,549 - parser1.py - [line:88] - ERROR - Url:https://bj.ke.com/ershoufang/chaoyang/pg7y4l2bp650ep900/
+2018-07-13 17:24:33,549 - parser1.py - [line:89] - ERROR - list index out of range
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 77, in parse_l1_data_2_urls
+    page_data = selector.xpath(r"//div[@class='page-box house-lst-page-box'][1]/@page-data")[0]
+IndexError: list index out of range
+2018-07-13 17:43:20,467 - parser1.py - [line:181] - ERROR - Url:https://bj.ke.com/ershoufang/101102960994.html
+2018-07-13 17:43:20,467 - parser1.py - [line:182] - ERROR - 'NoneType' object has no attribute 'encode'
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 94, in parse_l2_data_2_persist
+    selector = etree.HTML(html.encode('utf-8'))
+AttributeError: 'NoneType' object has no attribute 'encode'

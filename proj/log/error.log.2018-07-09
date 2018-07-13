@@ -1,0 +1,45 @@
+2018-07-09 16:16:25,566 - parser1.py - [line:343] - ERROR - 'NoneType' object has no attribute 'encode'
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 244, in parse_l3_data_2_persist
+    selector = etree.HTML(html.encode('utf-8'))
+AttributeError: 'NoneType' object has no attribute 'encode'
+2018-07-09 16:16:25,607 - parser1.py - [line:343] - ERROR - 'NoneType' object has no attribute 'encode'
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 244, in parse_l3_data_2_persist
+    selector = etree.HTML(html.encode('utf-8'))
+AttributeError: 'NoneType' object has no attribute 'encode'
+2018-07-09 23:53:10,233 - parser1.py - [line:178] - ERROR - list index out of range
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 94, in parse_l2_data_2_persist
+    r"//div[@class='overview']/div[@class='content']//div[@class='houseRecord']/span[2]/text()")[0]).strip()
+IndexError: list index out of range
+2018-07-09 23:53:12,812 - parser1.py - [line:178] - ERROR - list index out of range
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 94, in parse_l2_data_2_persist
+    r"//div[@class='overview']/div[@class='content']//div[@class='houseRecord']/span[2]/text()")[0]).strip()
+IndexError: list index out of range
+2018-07-09 23:55:33,930 - parser1.py - [line:178] - ERROR - list index out of range
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 94, in parse_l2_data_2_persist
+    r"//div[@class='overview']/div[@class='content']//div[@class='houseRecord']/span[2]/text()")[0]).strip()
+IndexError: list index out of range
+2018-07-09 23:55:35,655 - parser1.py - [line:178] - ERROR - list index out of range
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 94, in parse_l2_data_2_persist
+    r"//div[@class='overview']/div[@class='content']//div[@class='houseRecord']/span[2]/text()")[0]).strip()
+IndexError: list index out of range
+2018-07-09 23:56:47,167 - parser1.py - [line:178] - ERROR - list index out of range
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 94, in parse_l2_data_2_persist
+    r"//div[@class='overview']/div[@class='content']//div[@class='houseRecord']/span[2]/text()")[0]).strip()
+IndexError: list index out of range
+2018-07-09 23:58:00,393 - parser1.py - [line:178] - ERROR - list index out of range
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 94, in parse_l2_data_2_persist
+    r"//div[@class='overview']/div[@class='content']//div[@class='houseRecord']/span[2]/text()")[0]).strip()
+IndexError: list index out of range
+2018-07-09 23:59:10,800 - parser1.py - [line:178] - ERROR - list index out of range
+Traceback (most recent call last):
+  File "E:\Personal Project\beike_spider\proj\src\parser1.py", line 94, in parse_l2_data_2_persist
+    r"//div[@class='overview']/div[@class='content']//div[@class='houseRecord']/span[2]/text()")[0]).strip()
+IndexError: list index out of range
